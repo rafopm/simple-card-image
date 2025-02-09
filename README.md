@@ -88,8 +88,8 @@ Overlay on image
 		background-color: rgba(0, 255, 255, 0.5);
 		border-radius: 5px;
 		display: none;
+		place-items: center;
 		justify-content: center;
-		align-items: center;
 	}
 
 	.card .img-container:hover {
@@ -97,7 +97,7 @@ Overlay on image
 	}
 
 	.card .img-container:hover .overlay {
-		display: flex;
+		display: grid;
 	}
 ```
 

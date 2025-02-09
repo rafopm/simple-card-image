@@ -14,9 +14,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -34,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/rafopm/simple-card-image/blob/main/src/components/card.astro](https://github.com/rafopm/simple-card-image/blob/main/src/components/card.astro)
+- Live Site URL: [https://nft-preview-card-component-challenge.netlify.app/](https://nft-preview-card-component-challenge.netlify.app/)
 
 ## My process
 
@@ -44,48 +42,71 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Astro](https://astro.build/)
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Overlay on image
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="img-container">
+				<img
+					src="/images/image-equilibrium.jpg"
+					class="card-img"
+					alt=""
+				/>
+				<div class="overlay">
+					<img src="/images/icon-view.svg" alt="View" />
+				</div>
+			</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.card .img-container {
+		position: relative;
+		align-self: center;
+		margin: 20px;
+		width: 280px;
+		height: 280px;
+		border-radius: 5px;
+	}
+
+	.card .card-img {
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+	}
+
+	.card .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 255, 255, 0.5);
+		border-radius: 5px;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card .img-container:hover {
+		cursor: pointer;
+	}
+
+	.card .img-container:hover .overlay {
+		display: flex;
+	}
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I am a full stack developer but at the moment I am focused on developing frontend skills.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Website - [Add your name here](https://rafopm.netlify.app/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/rafopm)

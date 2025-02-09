@@ -108,5 +108,5 @@ I am a full stack developer but at the moment I am focused on developing fronten
 
 ## Author
 
-- Website - [Add your name here](https://rafopm.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/rafopm)
+- Website - [Rafael Pampavilca](https://rafopm.netlify.app/)
+- Frontend Mentor - [@rafopm](https://www.frontendmentor.io/profile/rafopm)

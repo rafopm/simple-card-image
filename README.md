@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/images/captura-nft-preview-card-component-challenge.jpg)
+![Screenshot](https://github.com/rafopm/simple-card-image/blob/main/public/images/captura-nft-preview-card-component-challenge.jpg?raw=true)
 
 
 ### Links
